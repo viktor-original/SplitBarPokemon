@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TapBarPokemon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Trainer" translatesAutoresizingMaskIntoConstraints="NO" id="z3y-yB-AHu">
+                                <rect key="frame" x="-67" y="252" width="353" height="360"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpd-QJ-1g5">
+                                <rect key="frame" x="227" y="318" width="132" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tap here to choose"/>
+                                <connections>
+                                    <segue destination="VH3-Yt-pGq" kind="show" id="VbN-Ou-Ya6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome, Trainer!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlN-nU-RkO">
+                                <rect key="frame" x="118" y="139" width="138" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your pokemon." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoN-Zs-UNU">
+                                <rect key="frame" x="99" y="178" width="177" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="117"/>
+        </scene>
+        <!--Vulpix-->
+        <scene sceneID="XrO-LL-3AA">
+            <objects>
+                <viewController id="Zwe-6D-ZZH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kX8-Gb-umu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Konnichi wa!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Nu-WF-H1W">
+                                <rect key="frame" x="119" y="478" width="137" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgS-QL-RjO">
+                                <rect key="frame" x="123" y="109" width="128" height="58"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Vulpix">
+                                        <attributes>
+                                            <font key="NSFont" size="53" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Vulpix" translatesAutoresizingMaskIntoConstraints="NO" id="0PG-cQ-WUh">
+                                <rect key="frame" x="72" y="195" width="230" height="260"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.70664911180000001" blue="0.46451916580000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Nu-WF-H1W" firstAttribute="leading" secondItem="pf4-Ub-fGc" secondAttribute="leading" constant="119" id="203-1P-YmU"/>
+                            <constraint firstItem="0PG-cQ-WUh" firstAttribute="top" secondItem="dgS-QL-RjO" secondAttribute="bottom" constant="28" id="2LX-np-a59"/>
+                            <constraint firstItem="dgS-QL-RjO" firstAttribute="leading" secondItem="pf4-Ub-fGc" secondAttribute="leading" constant="123" id="5ep-q9-0cV"/>
+                            <constraint firstItem="pf4-Ub-fGc" firstAttribute="bottom" secondItem="5Nu-WF-H1W" secondAttribute="bottom" constant="110" id="Ykj-0Z-UpP"/>
+                            <constraint firstItem="dgS-QL-RjO" firstAttribute="top" secondItem="pf4-Ub-fGc" secondAttribute="top" constant="89" id="d2Z-1r-l9j"/>
+                            <constraint firstItem="pf4-Ub-fGc" firstAttribute="trailing" secondItem="dgS-QL-RjO" secondAttribute="trailing" constant="124" id="dC5-vg-tMv"/>
+                            <constraint firstItem="0PG-cQ-WUh" firstAttribute="leading" secondItem="pf4-Ub-fGc" secondAttribute="leading" constant="72" id="hcR-sI-LIC"/>
+                            <constraint firstItem="pf4-Ub-fGc" firstAttribute="trailing" secondItem="5Nu-WF-H1W" secondAttribute="trailing" constant="119" id="nD8-nL-uSj"/>
+                            <constraint firstItem="pf4-Ub-fGc" firstAttribute="trailing" secondItem="0PG-cQ-WUh" secondAttribute="trailing" constant="73" id="pyq-Cp-YgN"/>
+                            <constraint firstItem="5Nu-WF-H1W" firstAttribute="top" secondItem="0PG-cQ-WUh" secondAttribute="bottom" constant="23" id="yRS-u9-NMY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pf4-Ub-fGc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Vulpix" id="L4t-Id-3PA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VKo-c5-bsO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2050.4000000000001" y="117.39130434782609"/>
+        </scene>
+        <!--Squirtle-->
+        <scene sceneID="4GO-jN-cpB">
+            <objects>
+                <viewController id="cez-hc-ngL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TvX-j2-zBk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hallo!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04g-gy-FgE">
+                                <rect key="frame" x="156" y="475" width="62" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWk-af-AKv">
+                                <rect key="frame" x="94" y="83" width="187" height="58"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Squirtle">
+                                        <attributes>
+                                            <font key="NSFont" size="53" name="MarkerFelt-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Squirtle" translatesAutoresizingMaskIntoConstraints="NO" id="9ah-vw-Kja">
+                                <rect key="frame" x="41" y="218" width="292" height="231"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0038721188902854919" green="0.87452894449234009" blue="0.98382049798965454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aqw-5c-vKM" firstAttribute="bottom" secondItem="04g-gy-FgE" secondAttribute="bottom" constant="113" id="6Qr-yk-wYi"/>
+                            <constraint firstItem="9ah-vw-Kja" firstAttribute="leading" secondItem="aqw-5c-vKM" secondAttribute="leading" constant="41" id="CwW-VG-iSL"/>
+                            <constraint firstItem="9ah-vw-Kja" firstAttribute="top" secondItem="eWk-af-AKv" secondAttribute="bottom" constant="77" id="MbY-iq-q1q"/>
+                            <constraint firstItem="eWk-af-AKv" firstAttribute="leading" secondItem="aqw-5c-vKM" secondAttribute="leading" constant="94" id="Voz-fN-f9n"/>
+                            <constraint firstItem="eWk-af-AKv" firstAttribute="top" secondItem="aqw-5c-vKM" secondAttribute="top" constant="63" id="WtH-y9-QUb"/>
+                            <constraint firstItem="04g-gy-FgE" firstAttribute="top" secondItem="9ah-vw-Kja" secondAttribute="bottom" constant="26" id="bld-gA-YSV"/>
+                            <constraint firstItem="aqw-5c-vKM" firstAttribute="trailing" secondItem="eWk-af-AKv" secondAttribute="trailing" constant="94" id="djv-OV-Emd"/>
+                            <constraint firstItem="aqw-5c-vKM" firstAttribute="trailing" secondItem="04g-gy-FgE" secondAttribute="trailing" constant="157" id="e19-tH-Qru"/>
+                            <constraint firstItem="aqw-5c-vKM" firstAttribute="trailing" secondItem="9ah-vw-Kja" secondAttribute="trailing" constant="42" id="psl-oA-aRm"/>
+                            <constraint firstItem="04g-gy-FgE" firstAttribute="leading" secondItem="aqw-5c-vKM" secondAttribute="leading" constant="156" id="wkO-oP-lOV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aqw-5c-vKM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Squirtle" id="sMY-OG-LXb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jga-hr-jL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="-617.54122938530736"/>
+        </scene>
+        <!--Slowpoke-->
+        <scene sceneID="S3f-Vq-xOB">
+            <objects>
+                <viewController id="ywy-QO-RwH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AOh-Qu-2QU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heellooo!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3Y-P6-0mx">
+                                <rect key="frame" x="136" y="480" width="103" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYD-Zf-9i4">
+                                <rect key="frame" x="70" y="123" width="234" height="78"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Slowpoke">
+                                        <attributes>
+                                            <font key="NSFont" size="53" name="MarkerFelt-Thin"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Slowpoke" translatesAutoresizingMaskIntoConstraints="NO" id="LtD-GW-grq">
+                                <rect key="frame" x="46" y="219" width="283" height="228"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.74703060639999996" blue="0.83255339930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="u3Y-P6-0mx" firstAttribute="top" secondItem="LtD-GW-grq" secondAttribute="bottom" constant="33" id="72Y-0l-1Ms"/>
+                            <constraint firstItem="LtD-GW-grq" firstAttribute="top" secondItem="qrP-SK-9la" secondAttribute="top" constant="199" id="BBQ-Vy-lvf"/>
+                            <constraint firstItem="qrP-SK-9la" firstAttribute="trailing" secondItem="u3Y-P6-0mx" secondAttribute="trailing" constant="136" id="BeW-ID-wXa"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="LtD-GW-grq" secondAttribute="bottom" constant="171" id="Pt2-wd-4V4"/>
+                            <constraint firstItem="qrP-SK-9la" firstAttribute="bottom" secondItem="u3Y-P6-0mx" secondAttribute="bottom" constant="108" id="VSy-l2-fL1"/>
+                            <constraint firstItem="LtD-GW-grq" firstAttribute="top" secondItem="hYD-Zf-9i4" secondAttribute="bottom" constant="18" id="Wn9-h2-7BR"/>
+                            <constraint firstItem="LtD-GW-grq" firstAttribute="leading" secondItem="qrP-SK-9la" secondAttribute="leading" constant="46" id="ciW-EP-qHG"/>
+                            <constraint firstItem="hYD-Zf-9i4" firstAttribute="top" secondItem="qrP-SK-9la" secondAttribute="top" constant="103" id="d1I-t1-clT"/>
+                            <constraint firstItem="qrP-SK-9la" firstAttribute="trailing" secondItem="hYD-Zf-9i4" secondAttribute="trailing" constant="71" id="ffW-l0-HB6"/>
+                            <constraint firstItem="hYD-Zf-9i4" firstAttribute="leading" secondItem="qrP-SK-9la" secondAttribute="leading" constant="70" id="k1Q-T1-CvY"/>
+                            <constraint firstItem="qrP-SK-9la" firstAttribute="trailing" secondItem="LtD-GW-grq" secondAttribute="trailing" constant="46" id="nq9-ZI-L3I"/>
+                            <constraint firstItem="u3Y-P6-0mx" firstAttribute="leading" secondItem="qrP-SK-9la" secondAttribute="leading" constant="136" id="uPm-H9-wa1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qrP-SK-9la"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Slowpoke" id="ZXg-O8-M5Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kq-d8-qsb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1413.5999999999999" y="878.41079460269873"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Rzp-C8-s3Y">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="VH3-Yt-pGq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="S0e-4g-YQQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Zwe-6D-ZZH" kind="relationship" relationship="viewControllers" id="55j-Za-d43"/>
+                        <segue destination="ywy-QO-RwH" kind="relationship" relationship="viewControllers" id="5lV-xm-DtL"/>
+                        <segue destination="cez-hc-ngL" kind="relationship" relationship="viewControllers" id="n9T-Nb-eG9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akw-sc-lMC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1111.2" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Slowpoke" width="215" height="215"/>
+        <image name="Squirtle" width="452" height="452"/>
+        <image name="Trainer" width="250" height="365"/>
+        <image name="Vulpix" width="468" height="468"/>
+    </resources>
+</document>
